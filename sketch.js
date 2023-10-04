@@ -1,12 +1,3 @@
-// function clicked() {
-//   transparency = transparency - .1;
-//   schoolButton.style("opacity", transparency);
-//   if (transparency <= 0) {
-//     location.href = "index2.html"
-//   }
-// }
-
-
 let schoolButton = document.getElementById("schoolButton");
 let workButton = document.getElementById("workButton");
 let route1Button = document.getElementById("route1Button");
