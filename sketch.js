@@ -1,43 +1,3 @@
-// let butt1, butt2, butt3;
-
-// function setup() {
-//     noCanvas();
-//     createButton("butt1");
-//     butt1.mouseClicked( click1 );
-//     createButton("butt2");
-//     butt2.mouseClicked( click2 );
-//     createButton("butt3");
-//     butt3.mouseClicked( click3 );
-// }
-
-// let myButton;
-
-// schoolButton = document.getElementById("schoolButton");
-
-// myButton = createButton("Button")
-// myButton.mouseClicked(clickedButton);
-
-// function clickedButton() {
-//     select(Map1.png).style("width", "100%")
-// }
-
-// function setup() {
-// createCanvas(300, 300)
-
-// }
-
-// function setup() {
-//     noCanvas();
-//     let button = createButton('School');
-//     button.position(200, 200)
-//     button.mouseClicked( clicked)
-// }
-
-// function clicked() {
-//     let img = createImage(600, 450)
-
-// }
-
 // function clicked() {
 //   transparency = transparency - .1;
 //   schoolButton.style("opacity", transparency);
@@ -46,12 +6,30 @@
 //   }
 // }
 
+
 let schoolButton = document.getElementById("schoolButton");
 let workButton = document.getElementById("workButton");
+let route1Button = document.getElementById("route1Button");
 schoolButton.addEventListener("click", goToSchool);
+workButton.addEventListener("click", goToWork);
+route1Button.addEventListener("click", goToRoute1);
+
+function setup() {
+  noCanvas();
+}
 
 function goToSchool() {
   console.log("Button clicked!");
   location.href = "index2.html";
+}
+
+function goToWork() {
+  console.log("Button clicked!");
+  location.href = "index2.html";
+}
+
+function goToRoute1() {
+  console.log("Button clicked!");
+  location.href = "https://google.com";
 }
 
