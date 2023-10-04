@@ -38,21 +38,20 @@
 
 // }
 
-let transparency = 1;
-let p
+// function clicked() {
+//   transparency = transparency - .1;
+//   schoolButton.style("opacity", transparency);
+//   if (transparency <= 0) {
+//     location.href = "index2.html"
+//   }
+// }
 
-function setup() {
-  noCanvas();
-  p =createP("TEXT");
-  p.position(displayWidth/2, displayHeight/2)
-  p.mouseClicked( clicked );
-}
+let schoolButton = document.getElementById("schoolButton");
+let workButton = document.getElementById("workButton");
+schoolButton.addEventListener("click", goToSchool);
 
-function clicked() {
-  transparency = transparency - .1;
-  p.style("opacity", transparency);
-  if (transparency <= 0) {
-    location.href = "index2.html"
-  }
+function goToSchool() {
+  console.log("Button clicked!");
+  location.href = "index2.html";
 }
 
