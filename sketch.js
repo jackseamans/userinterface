@@ -16,7 +16,7 @@ function goToSchool() {
 
 function goToWork() {
   console.log("Button clicked!");
-  location.href = "index2.html";
+  location.href = "index3.html";
 }
 
 function goToRoute1() {
