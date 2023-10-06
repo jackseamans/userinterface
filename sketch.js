@@ -1,9 +1,11 @@
 let schoolRoutesButton = document.getElementById("schoolButton");
 let workRoutesButton = document.getElementById("workButton");
-let route1Button = document.getElementById("route1Button");
+let schoolFood1Button = document.getElementById("schoolFood1Button");
+let schoolFood2Button = document.getElementById("schoolFood2Button");
 schoolRoutesButton.addEventListener("click", schoolRoutes);
-workButton.addEventListener("click", workRoutes);
-route1Button.addEventListener("click", goToRoute1);
+workRoutesButton.addEventListener("click", workRoutes);
+schoolFood1Button.addEventListener("click", schoolFood1);
+schoolFood2Button.addEventListener("click", schoolFood2);
 
 function setup() {
   noCanvas();
@@ -19,8 +21,13 @@ function workRoutes() {
   location.href = "index5.html";
 }
 
-function goToRoute1() {
+function schoolFood1() {
   console.log("Button clicked!");
-  location.href = "https://google.com";
+  location.href = "index3.html";
+}
+
+function schoolFood2() {
+  console.log("Button clicked!");
+  location.href = "index4.html";
 }
 
