@@ -1,22 +1,22 @@
-let schoolButton = document.getElementById("schoolButton");
-let workButton = document.getElementById("workButton");
+let schoolRoutesButton = document.getElementById("schoolButton");
+let workRoutesButton = document.getElementById("workButton");
 let route1Button = document.getElementById("route1Button");
-schoolButton.addEventListener("click", goToSchool);
-workButton.addEventListener("click", goToWork);
+schoolRoutesButton.addEventListener("click", schoolRoutes);
+workButton.addEventListener("click", workRoutes);
 route1Button.addEventListener("click", goToRoute1);
 
 function setup() {
   noCanvas();
 }
 
-function goToSchool() {
+function schoolRoutes() {
   console.log("Button clicked!");
   location.href = "index2.html";
 }
 
-function goToWork() {
+function workRoutes() {
   console.log("Button clicked!");
-  location.href = "index3.html";
+  location.href = "index5.html";
 }
 
 function goToRoute1() {
