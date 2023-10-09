@@ -13,6 +13,7 @@ function setup() {
 
     button = createButton ('Continue to Route');
     button.hide();
+    button.mousePressed(dunkinRoute);
   }
   
   function draw() {
@@ -22,4 +23,9 @@ function setup() {
       text('Order cost is $' + val, width / 2, height / 2);
       button.show();
     }
+  }
+
+  function dunkinRoute() {
+    console.log("Button clicked!");
+    location.href = "index19.html";
   }

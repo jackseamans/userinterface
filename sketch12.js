@@ -13,6 +13,7 @@ function setup() {
 
     button = createButton ('Continue to Route');
     button.hide();
+    button.mousePressed(jerseyMikesRoute);
   }
   
   function draw() {
@@ -22,4 +23,9 @@ function setup() {
       text('Order cost is $' + val, width / 2, height / 2);
       button.show();
     }
+  }
+
+  function jerseyMikesRoute() {
+    console.log("Button clicked!");
+    location.href = "index20.html";
   }

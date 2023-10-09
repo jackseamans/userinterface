@@ -13,6 +13,7 @@ function setup() {
 
     button = createButton ('Continue to Route');
     button.hide();
+    button.mousePressed(burgerKingRoute);
   }
   
   function draw() {
@@ -22,4 +23,9 @@ function setup() {
       text('Order cost is $' + val, width / 2, height / 2);
       button.show();
     }
+  }
+
+  function burgerKingRoute() {
+    console.log("Button clicked!");
+    location.href = "index18.html";
   }
