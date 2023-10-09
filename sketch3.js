@@ -3,7 +3,7 @@ let starbucksButton = document.getElementById("starbucksButton");
 mcdonaldsButton.addEventListener("click", mcdonalds);
 starbucksButton.addEventListener("click", starbucks);
 
-function setup() {
+function createCanvas() {
   noCanvas();
 }
 
