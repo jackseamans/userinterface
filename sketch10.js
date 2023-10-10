@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('20.00', '1x Family Bundle');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('16.99', '1x Double Whopper Meal');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('7.98', '2x Onion Rings');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);

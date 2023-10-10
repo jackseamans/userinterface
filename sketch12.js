@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('12.70', '1x Reg #17 Mikes Famous Philly');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('19.95', '1x Giant #26 Bacon Ranch Chicken Cheese Steak');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('12.95', '1x Bowl #56 Big Kahuna Cheese Steak');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);

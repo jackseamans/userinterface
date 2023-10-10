@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('11.20', '1x Med Hook and Ladder');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('17.15', '1x Large Firehouse Meatball w/ Extra Cheese');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('11.95', '1x Med Club on a Sub');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);

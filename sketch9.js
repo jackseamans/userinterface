@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('4.75', '1x Caffé Latte');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('5.15', '1x Iced Caffé Latte');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('4.55', '1x Iced Shaken Espresso ');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);

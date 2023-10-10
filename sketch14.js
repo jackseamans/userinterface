@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('12.75', '1x 12 Inch Original Pepperoni Pizza');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('14.00', '1x 10 Inch Super Hawaiian Pizza');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('16.00', '2x 6 Piece Buffalo Wings');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);

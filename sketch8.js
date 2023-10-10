@@ -5,8 +5,17 @@ function setup() {
 
     radio = createRadio();
     radio.option('6.99', '2x McDouble, 1x Lg Fry');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.option('9.49', '1x M Big Mac Meal w/ Coca-Cola');
+    var div = createDiv();
+    div.style('margin-bottom', '10px'); 
+    div.parent(radio);
     radio.option('4.29', '1x L Sprite, 1x Lg Fry');
+    var div = createDiv();
+    div.style('margin-bottom', '10px');
+    div.parent(radio);
     radio.style('width', '300px');
     radio.selected('2');
     textAlign(CENTER);
